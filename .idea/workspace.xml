@@ -24,7 +24,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Main + Io.c" />
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Initial project scaffolding with CMake build">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +131,7 @@
       <workItem from="1777482011568" duration="45000" />
       <workItem from="1777482068313" duration="81000" />
       <workItem from="1777482169279" duration="3404000" />
+      <workItem from="1777488648316" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -162,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777481110523</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial project scaffolding with CMake build">
+      <option name="closed" value="true" />
+      <created>1777488864144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777488864144</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +190,7 @@
     <MESSAGE value="CSV Loading" />
     <MESSAGE value="Analysis" />
     <MESSAGE value="Main + Io.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main + Io.c" />
+    <MESSAGE value="Initial project scaffolding with CMake build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial project scaffolding with CMake build" />
   </component>
 </project>
