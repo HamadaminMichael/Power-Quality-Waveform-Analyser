@@ -24,8 +24,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Initial project scaffolding with CMake build">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Add WaveformSample struct definition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <workItem from="1777482011568" duration="45000" />
       <workItem from="1777482068313" duration="81000" />
       <workItem from="1777482169279" duration="3404000" />
-      <workItem from="1777488648316" duration="2074000" />
+      <workItem from="1777488648316" duration="3716000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -173,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777488864144</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add WaveformSample struct definition">
+      <option name="closed" value="true" />
+      <created>1777490787108</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777490787108</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +201,7 @@
     <MESSAGE value="Analysis" />
     <MESSAGE value="Main + Io.c" />
     <MESSAGE value="Initial project scaffolding with CMake build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial project scaffolding with CMake build" />
+    <MESSAGE value="Add WaveformSample struct definition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add WaveformSample struct definition" />
   </component>
 </project>

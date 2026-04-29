@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 add_executable(Power-Quality-Waveform-Analyser
         main.c
+        io.c
 )
