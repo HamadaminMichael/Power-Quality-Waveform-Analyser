@@ -16,12 +16,14 @@ int main(int argc, char *argv[]) {
     }
 
     printf("Loaded %zu samples from %s\n", n, argv[1]);
-    printf("Phase A RMS: %.3f V (nominal %.1f V)\n",
-           compute_rms(samples, n, 0), NOMINAL_RMS);
-    printf("Phase B RMS: %.3f V (nominal %.1f V)\n",
-           compute_rms(samples, n, 1), NOMINAL_RMS);
-    printf("Phase C RMS: %.3f V (nominal %.1f V)\n",
-           compute_rms(samples, n, 2), NOMINAL_RMS);
+
+    for (int p = 0; p < 3; p++) {
+        char name = (char)('A' + p);
+        printf("Phase %c -- RMS: %.3f V, Peak-to-peak: %.3f V\n",
+               name,
+               compute_rms(samples, n, p),
+               compute_peak_to_peak(samples, n, p));
+    }
 
     free(samples);
     return 0;
