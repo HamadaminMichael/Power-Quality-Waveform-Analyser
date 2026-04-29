@@ -1,1 +1,0 @@
-CMakeLists.txt not found in C:\Users\Micha\CLionProjects\Power-Quality-Waveform-Analyser Select CMakeLists.txt
