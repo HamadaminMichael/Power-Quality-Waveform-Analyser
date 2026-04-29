@@ -24,10 +24,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Add WaveformSample struct definition">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Implemented basic CSV loader">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/io.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/io.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/waveform.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +115,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,7 +142,7 @@
       <workItem from="1777482011568" duration="45000" />
       <workItem from="1777482068313" duration="81000" />
       <workItem from="1777482169279" duration="3404000" />
-      <workItem from="1777488648316" duration="3716000" />
+      <workItem from="1777488648316" duration="4162000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -183,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777490787108</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented basic CSV loader">
+      <option name="closed" value="true" />
+      <created>1777493631800</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1777493631800</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +219,7 @@
     <MESSAGE value="Main + Io.c" />
     <MESSAGE value="Initial project scaffolding with CMake build" />
     <MESSAGE value="Add WaveformSample struct definition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add WaveformSample struct definition" />
+    <MESSAGE value="Implemented basic CSV loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented basic CSV loader" />
   </component>
 </project>
