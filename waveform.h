@@ -1,5 +1,8 @@
 #ifndef WAVEFORM_H
 #define WAVEFORM_H
+#include <stddef.h>
+
+#define NOMINAL_RMS 230.0
 
 typedef struct {
     double timestamp;
@@ -11,5 +14,9 @@ typedef struct {
     double power_factor;
     double thd_percent;
 } WaveformSample;
+
+/* Compute RMS voltage for the given phase.
+ * phase: 0 = A, 1 = B, 2 = C */
+double compute_rms(const WaveformSample *samples, size_t n, int phase);
 
 #endif
