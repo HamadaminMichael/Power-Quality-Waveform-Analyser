@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "waveform.h"
 #include "io.h"
 
@@ -8,12 +9,14 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    WaveformSample samples[MAX_SAMPLES];
-    size_t n = load_csv(argv[1], samples, MAX_SAMPLES);
-    if (n == 0) {
+    size_t n = 0;
+    WaveformSample *samples = load_csv(argv[1], &n);
+    if (samples == NULL) {
         return 1;
     }
 
     printf("Loaded %zu samples from %s\n", n, argv[1]);
+
+    free(samples);
     return 0;
 }

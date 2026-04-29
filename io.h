@@ -3,10 +3,6 @@
 #include <stddef.h>
 #include "waveform.h"
 
-#define MAX_SAMPLES 2000
-
-size_t load_csv(const char *filename,
-                WaveformSample *out_samples,
-                size_t max_samples);
+WaveformSample *load_csv(const char *filename, size_t *out_count);
 
 #endif
