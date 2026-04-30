@@ -3,6 +3,13 @@ project(Power-Quality-Waveform-Analyser C)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+
+if(MSVC)
+    add_compile_options(/W4)
+else()
+    add_compile_options(-Wall -Wextra -pedantic)
+endif()
 
 add_executable(Power-Quality-Waveform-Analyser
         main.c
