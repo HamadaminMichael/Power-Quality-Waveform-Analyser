@@ -28,11 +28,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="+/-10% Tolerance">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="External Report Output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io.c" beforeDir="false" afterPath="$PROJECT_DIR$/io.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io.h" beforeDir="false" afterPath="$PROJECT_DIR$/io.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,12 +110,12 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Power-Quality-Waveform-Analyser" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="power_quality_log.csv" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Power-Quality-Waveform-Analyser" TARGET_NAME="Power-Quality-Waveform-Analyser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Power-Quality-Waveform-Analyser" RUN_TARGET_NAME="Power-Quality-Waveform-Analyser">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Power-Quality-Waveform-Analyser" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="power_quality_log.csv" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Power-Quality-Waveform-Analyser" TARGET_NAME="Power-Quality-Waveform-Analyser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Power-Quality-Waveform-Analyser" RUN_TARGET_NAME="Power-Quality-Waveform-Analyser">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -147,7 +144,8 @@
       <workItem from="1777482169279" duration="3404000" />
       <workItem from="1777488648316" duration="5480000" />
       <workItem from="1777499049661" duration="16000" />
-      <workItem from="1777499079188" duration="9091000" />
+      <workItem from="1777499079188" duration="9392000" />
+      <workItem from="1777547891492" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -277,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777514874347</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="External Report Output">
+      <option name="closed" value="true" />
+      <created>1777516323024</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1777516323024</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +310,7 @@
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Clipping Detection" />
     <MESSAGE value="+/-10% Tolerance" />
-    <option name="LAST_COMMIT_MESSAGE" value="+/-10% Tolerance" />
+    <MESSAGE value="External Report Output" />
+    <option name="LAST_COMMIT_MESSAGE" value="External Report Output" />
   </component>
 </project>

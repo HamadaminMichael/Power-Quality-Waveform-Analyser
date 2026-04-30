@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX_LINE 512
 
@@ -32,12 +33,14 @@ WaveformSample *load_csv(const char *filename, size_t *out_count) {
 
     size_t n = count_data_rows(fp);
     if (n == 0) {
+        fprintf(stderr, "Error: file '%s' contains no data rows\n", filename);
         fclose(fp);
         return NULL;
     }
 
     WaveformSample *samples = malloc(n * sizeof(WaveformSample));
     if (samples == NULL) {
+        fprintf(stderr, "Error: out of memory (%zu samples)\n", n);
         fclose(fp);
         return NULL;
     }
@@ -45,7 +48,11 @@ WaveformSample *load_csv(const char *filename, size_t *out_count) {
     rewind(fp);
 
     char line[MAX_LINE];
-    fgets(line, sizeof(line), fp);
+    if (fgets(line, sizeof(line), fp) == NULL) {
+        free(samples);
+        fclose(fp);
+        return NULL;
+    }
 
     size_t i = 0;
     while (i < n && fgets(line, sizeof(line), fp) != NULL) {
@@ -60,9 +67,11 @@ WaveformSample *load_csv(const char *filename, size_t *out_count) {
                             &s->frequency,
                             &s->power_factor,
                             &s->thd_percent);
-        if (parsed == 8) {
-            i++;
+        if (parsed != 8) {
+            fprintf(stderr, "Warning: malformed row, skipped\n");
+            continue;
         }
+        i++;
     }
 
     fclose(fp);
@@ -79,6 +88,7 @@ int write_results(const char *filename,
 
     FILE *fp = fopen(filename, "w");
     if (fp == NULL) {
+        fprintf(stderr, "Error: cannot open '%s' for writing\n", filename);
         return 1;
     }
 
