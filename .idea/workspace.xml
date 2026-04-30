@@ -28,8 +28,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Complier Warnings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Result Generation">
+      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +145,7 @@
       <workItem from="1777488648316" duration="5480000" />
       <workItem from="1777499049661" duration="16000" />
       <workItem from="1777499079188" duration="9392000" />
-      <workItem from="1777547891492" duration="491000" />
+      <workItem from="1777547891492" duration="1189000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -299,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777548370771</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Result Generation">
+      <option name="closed" value="true" />
+      <created>1777548429852</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1777548429852</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +337,7 @@
     <MESSAGE value="External Report Output" />
     <MESSAGE value="Clearer Errors/Warnings" />
     <MESSAGE value="Complier Warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complier Warnings" />
+    <MESSAGE value="Result Generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Result Generation" />
   </component>
 </project>

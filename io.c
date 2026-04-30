@@ -107,12 +107,14 @@ int write_results(const char *filename,
     for (int i = 0; i < 3; i++) {
         PhaseMetrics m = compute_phase_metrics(samples, count, phases[i]);
         fprintf(fp, "%s\n", names[i]);
-        fprintf(fp, "  RMS voltage:      %8.3f V (nominal %.1f V)\n",
+        fprintf(fp, "  RMS voltage:        %8.3f V (nominal %.1f V)\n",
                 m.rms, NOMINAL_RMS);
-        fprintf(fp, "  Peak-to-peak:     %8.3f V\n", m.peak_to_peak);
-        fprintf(fp, "  DC offset:        %8.3f V\n", m.dc_offset);
-        fprintf(fp, "  Clipping samples: %d\n", m.clipping_count);
-        fprintf(fp, "  Within +/-10%%:    %s\n",
+        fprintf(fp, "  Peak-to-peak:       %8.3f V\n", m.peak_to_peak);
+        fprintf(fp, "  DC offset:          %8.3f V\n", m.dc_offset);
+        fprintf(fp, "  Variance:           %8.3f V^2\n", m.variance);
+        fprintf(fp, "  Standard deviation: %8.3f V\n", m.std_dev);
+        fprintf(fp, "  Clipping samples:   %d\n", m.clipping_count);
+        fprintf(fp, "  Within +/-10%%:      %s\n",
                 m.within_tolerance ? "YES" : "NO");
         fprintf(fp, "\n");
     }

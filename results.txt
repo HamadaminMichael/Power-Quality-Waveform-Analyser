@@ -6,23 +6,29 @@ Window duration:  0.1998 s
 Sample period:    0.2000 ms
 
 Phase A
-  RMS voltage:       229.810 V (nominal 230.0 V)
-  Peak-to-peak:      650.000 V
-  DC offset:          -0.000 V
-  Clipping samples: 20
-  Within +/-10%:    YES
+  RMS voltage:         229.810 V (nominal 230.0 V)
+  Peak-to-peak:        650.000 V
+  DC offset:            -0.000 V
+  Variance:           52812.500 V^2
+  Standard deviation:  229.810 V
+  Clipping samples:   20
+  Within +/-10%:      YES
 
 Phase B
-  RMS voltage:       229.810 V (nominal 230.0 V)
-  Peak-to-peak:      649.857 V
-  DC offset:           0.000 V
-  Clipping samples: 20
-  Within +/-10%:    YES
+  RMS voltage:         229.810 V (nominal 230.0 V)
+  Peak-to-peak:        649.857 V
+  DC offset:             0.000 V
+  Variance:           52812.500 V^2
+  Standard deviation:  229.810 V
+  Clipping samples:   20
+  Within +/-10%:      YES
 
 Phase C
-  RMS voltage:       229.810 V (nominal 230.0 V)
-  Peak-to-peak:      649.857 V
-  DC offset:          -0.000 V
-  Clipping samples: 20
-  Within +/-10%:    YES
+  RMS voltage:         229.810 V (nominal 230.0 V)
+  Peak-to-peak:        649.857 V
+  DC offset:            -0.000 V
+  Variance:           52812.500 V^2
+  Standard deviation:  229.810 V
+  Clipping samples:   20
+  Within +/-10%:      YES
 

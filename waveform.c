@@ -19,6 +19,7 @@ PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
         return m;
     }
 
+    /* Pass 1: sum, sum of squares, min/max, clipping count */
     double sum    = 0.0;
     double sum_sq = 0.0;
     double vmin   = phase_voltage(samples, p);
@@ -41,5 +42,17 @@ PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
     m.clipping_count  = clip;
     m.within_tolerance = (m.rms >= NOMINAL_RMS * (1.0 - TOLERANCE)) &&
                          (m.rms <= NOMINAL_RMS * (1.0 + TOLERANCE));
+
+    /* Pass 2: sum of squared deviations from the mean */
+    double sum_sq_dev = 0.0;
+    for (const WaveformSample *s = samples; s < end; s++) {
+        double v   = phase_voltage(s, p);
+        double dev = v - m.dc_offset;
+        sum_sq_dev += dev * dev;
+    }
+
+    m.variance = sum_sq_dev / (double)n;
+    m.std_dev  = sqrt(m.variance);
+
     return m;
 }
