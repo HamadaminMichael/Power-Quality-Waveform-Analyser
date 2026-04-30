@@ -19,10 +19,11 @@ int main(int argc, char *argv[]) {
 
     for (int p = 0; p < 3; p++) {
         char name = (char)('A' + p);
-        printf("Phase %c -- RMS: %.3f V, Peak-to-peak: %.3f V\n",
+        printf("Phase %c -- RMS: %.3f V, Pk-Pk: %.3f V, DC offset: %.3f V\n",
                name,
                compute_rms(samples, n, p),
-               compute_peak_to_peak(samples, n, p));
+               compute_peak_to_peak(samples, n, p),
+               compute_dc_offset(samples, n, p));
     }
 
     free(samples);

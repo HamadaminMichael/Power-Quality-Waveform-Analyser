@@ -18,5 +18,6 @@ typedef struct {
 /* phase: 0 = A, 1 = B, 2 = C */
 double compute_rms(const WaveformSample *samples, size_t n, int phase);
 double compute_peak_to_peak(const WaveformSample *samples, size_t n, int phase);
+double compute_dc_offset(const WaveformSample *samples, size_t n, int phase);
 
 #endif
