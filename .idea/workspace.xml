@@ -28,11 +28,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Clipping Detection">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="+/-10% Tolerance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io.c" beforeDir="false" afterPath="$PROJECT_DIR$/io.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io.h" beforeDir="false" afterPath="$PROJECT_DIR$/io.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waveform.c" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,7 @@
       <workItem from="1777482169279" duration="3404000" />
       <workItem from="1777488648316" duration="5480000" />
       <workItem from="1777499049661" duration="16000" />
-      <workItem from="1777499079188" duration="7338000" />
+      <workItem from="1777499079188" duration="9091000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -269,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777513948849</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="+/-10% Tolerance">
+      <option name="closed" value="true" />
+      <created>1777514874347</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1777514874347</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +303,7 @@
     <MESSAGE value="Added DC Calc" />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Clipping Detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clipping Detection" />
+    <MESSAGE value="+/-10% Tolerance" />
+    <option name="LAST_COMMIT_MESSAGE" value="+/-10% Tolerance" />
   </component>
 </project>

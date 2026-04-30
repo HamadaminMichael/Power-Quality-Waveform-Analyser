@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "waveform.h"
 #include "io.h"
 
@@ -17,20 +18,13 @@ int main(int argc, char *argv[]) {
 
     printf("Loaded %zu samples from %s\n", n, argv[1]);
 
-    const char *names[3]    = { "Phase A", "Phase B", "Phase C" };
-    PhaseSelector phases[3] = { PHASE_A,   PHASE_B,   PHASE_C   };
-
-    for (int i = 0; i < 3; i++) {
-        PhaseMetrics m = compute_phase_metrics(samples, n, phases[i]);
-        printf("%s -- RMS: %.3f V (%s), Pk-Pk: %.3f V, DC offset: %.3f V, clipping: %d\n",
-               names[i],
-               m.rms,
-               m.within_tolerance ? "in tolerance" : "OUT OF TOLERANCE",
-               m.peak_to_peak,
-               m.dc_offset,
-               m.clipping_count);
+    if (write_results("results.txt", samples, n) != 0) {
+        fprintf(stderr, "Error: failed to write results.txt\n");
+        free(samples);
+        return 1;
     }
 
+    printf("Results written to results.txt\n");
     free(samples);
     return 0;
 }
