@@ -28,7 +28,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="External Report Output">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Complier Warnings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +145,7 @@
       <workItem from="1777488648316" duration="5480000" />
       <workItem from="1777499049661" duration="16000" />
       <workItem from="1777499079188" duration="9392000" />
-      <workItem from="1777547891492" duration="9000" />
+      <workItem from="1777547891492" duration="491000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -283,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777516323024</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Clearer Errors/Warnings">
+      <option name="closed" value="true" />
+      <created>1777548051227</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1777548051227</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Complier Warnings">
+      <option name="closed" value="true" />
+      <created>1777548370771</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1777548370771</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +327,8 @@
     <MESSAGE value="Clipping Detection" />
     <MESSAGE value="+/-10% Tolerance" />
     <MESSAGE value="External Report Output" />
-    <option name="LAST_COMMIT_MESSAGE" value="External Report Output" />
+    <MESSAGE value="Clearer Errors/Warnings" />
+    <MESSAGE value="Complier Warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complier Warnings" />
   </component>
 </project>
