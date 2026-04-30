@@ -22,8 +22,13 @@ int main(int argc, char *argv[]) {
 
     for (int i = 0; i < 3; i++) {
         PhaseMetrics m = compute_phase_metrics(samples, n, phases[i]);
-        printf("%s -- RMS: %.3f V, Pk-Pk: %.3f V, DC offset: %.3f V, clipping: %d\n",
-               names[i], m.rms, m.peak_to_peak, m.dc_offset, m.clipping_count);
+        printf("%s -- RMS: %.3f V (%s), Pk-Pk: %.3f V, DC offset: %.3f V, clipping: %d\n",
+               names[i],
+               m.rms,
+               m.within_tolerance ? "in tolerance" : "OUT OF TOLERANCE",
+               m.peak_to_peak,
+               m.dc_offset,
+               m.clipping_count);
     }
 
     free(samples);

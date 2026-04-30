@@ -35,9 +35,11 @@ PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
         if (fabs(v) >= CLIPPING_THRESHOLD) clip++;
     }
 
-    m.dc_offset      = sum / (double)n;
-    m.rms            = sqrt(sum_sq / (double)n);
-    m.peak_to_peak   = vmax - vmin;
-    m.clipping_count = clip;
+    m.dc_offset       = sum / (double)n;
+    m.rms             = sqrt(sum_sq / (double)n);
+    m.peak_to_peak    = vmax - vmin;
+    m.clipping_count  = clip;
+    m.within_tolerance = (m.rms >= NOMINAL_RMS * (1.0 - TOLERANCE)) &&
+                         (m.rms <= NOMINAL_RMS * (1.0 + TOLERANCE));
     return m;
 }

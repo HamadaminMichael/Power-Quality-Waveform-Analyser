@@ -28,7 +28,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Added DC Calc">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Clipping Detection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waveform.c" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.c" afterDir="false" />
@@ -147,7 +147,7 @@
       <workItem from="1777482169279" duration="3404000" />
       <workItem from="1777488648316" duration="5480000" />
       <workItem from="1777499049661" duration="16000" />
-      <workItem from="1777499079188" duration="5529000" />
+      <workItem from="1777499079188" duration="7338000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -253,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777507912660</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cleanup">
+      <option name="closed" value="true" />
+      <created>1777512606638</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777512606638</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Clipping Detection">
+      <option name="closed" value="true" />
+      <created>1777513948849</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1777513948849</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +293,8 @@
     <MESSAGE value="RMS V Calc Added" />
     <MESSAGE value="Added Amp Calc" />
     <MESSAGE value="Added DC Calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DC Calc" />
+    <MESSAGE value="Cleanup" />
+    <MESSAGE value="Clipping Detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clipping Detection" />
   </component>
 </project>
