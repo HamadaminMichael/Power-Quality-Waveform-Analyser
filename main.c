@@ -17,13 +17,13 @@ int main(int argc, char *argv[]) {
 
     printf("Loaded %zu samples from %s\n", n, argv[1]);
 
-    for (int p = 0; p < 3; p++) {
-        char name = (char)('A' + p);
-        printf("Phase %c -- RMS: %.3f V, Pk-Pk: %.3f V, DC offset: %.3f V\n",
-               name,
-               compute_rms(samples, n, p),
-               compute_peak_to_peak(samples, n, p),
-               compute_dc_offset(samples, n, p));
+    const char *names[3]    = { "Phase A", "Phase B", "Phase C" };
+    PhaseSelector phases[3] = { PHASE_A,   PHASE_B,   PHASE_C   };
+
+    for (int i = 0; i < 3; i++) {
+        PhaseMetrics m = compute_phase_metrics(samples, n, phases[i]);
+        printf("%s -- RMS: %.3f V, Pk-Pk: %.3f V, DC offset: %.3f V\n",
+               names[i], m.rms, m.peak_to_peak, m.dc_offset);
     }
 
     free(samples);

@@ -2,73 +2,39 @@
 #include <math.h>
 #include <stddef.h>
 
-double compute_rms(const WaveformSample *samples, size_t n, int phase) {
-    if (samples == NULL || n == 0) {
-        return 0.0;
+double phase_voltage(const WaveformSample *s, PhaseSelector p) {
+    switch (p) {
+        case PHASE_A: return s->phase_A_voltage;
+        case PHASE_B: return s->phase_B_voltage;
+        case PHASE_C: return s->phase_C_voltage;
     }
-
-    double sum_sq = 0.0;
-    for (size_t i = 0; i < n; i++) {
-        double v;
-        if (phase == 0) {
-            v = samples[i].phase_A_voltage;
-        } else if (phase == 1) {
-            v = samples[i].phase_B_voltage;
-        } else {
-            v = samples[i].phase_C_voltage;
-        }
-        sum_sq += v * v;
-    }
-    return sqrt(sum_sq / (double)n);
+    return 0.0;
 }
 
-double compute_peak_to_peak(const WaveformSample *samples, size_t n, int phase) {
+PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
+                                   size_t n,
+                                   PhaseSelector p) {
+    PhaseMetrics m = {0};
     if (samples == NULL || n == 0) {
-        return 0.0;
+        return m;
     }
 
-    double first;
-    if (phase == 0) {
-        first = samples[0].phase_A_voltage;
-    } else if (phase == 1) {
-        first = samples[0].phase_B_voltage;
-    } else {
-        first = samples[0].phase_C_voltage;
-    }
+    double sum    = 0.0;
+    double sum_sq = 0.0;
+    double vmin   = phase_voltage(samples, p);
+    double vmax   = vmin;
 
-    double vmin = first;
-    double vmax = first;
-    for (size_t i = 1; i < n; i++) {
-        double v;
-        if (phase == 0) {
-            v = samples[i].phase_A_voltage;
-        } else if (phase == 1) {
-            v = samples[i].phase_B_voltage;
-        } else {
-            v = samples[i].phase_C_voltage;
-        }
+    const WaveformSample *end = samples + n;
+    for (const WaveformSample *s = samples; s < end; s++) {
+        double v = phase_voltage(s, p);
+        sum    += v;
+        sum_sq += v * v;
         if (v < vmin) vmin = v;
         if (v > vmax) vmax = v;
     }
-    return vmax - vmin;
-}
 
-double compute_dc_offset(const WaveformSample *samples, size_t n, int phase) {
-    if (samples == NULL || n == 0) {
-        return 0.0;
-    }
-
-    double sum = 0.0;
-    for (size_t i = 0; i < n; i++) {
-        double v;
-        if (phase == 0) {
-            v = samples[i].phase_A_voltage;
-        } else if (phase == 1) {
-            v = samples[i].phase_B_voltage;
-        } else {
-            v = samples[i].phase_C_voltage;
-        }
-        sum += v;
-    }
-    return sum / (double)n;
+    m.dc_offset    = sum / (double)n;
+    m.rms          = sqrt(sum_sq / (double)n);
+    m.peak_to_peak = vmax - vmin;
+    return m;
 }

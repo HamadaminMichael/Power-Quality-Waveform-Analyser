@@ -15,9 +15,18 @@ typedef struct {
     double thd_percent;
 } WaveformSample;
 
-/* phase: 0 = A, 1 = B, 2 = C */
-double compute_rms(const WaveformSample *samples, size_t n, int phase);
-double compute_peak_to_peak(const WaveformSample *samples, size_t n, int phase);
-double compute_dc_offset(const WaveformSample *samples, size_t n, int phase);
+typedef enum { PHASE_A, PHASE_B, PHASE_C } PhaseSelector;
+
+typedef struct {
+    double rms;
+    double peak_to_peak;
+    double dc_offset;
+} PhaseMetrics;
+
+double phase_voltage(const WaveformSample *s, PhaseSelector p);
+
+PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
+                                   size_t n,
+                                   PhaseSelector p);
 
 #endif

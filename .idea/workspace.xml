@@ -28,7 +28,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Added Amp Calc" />
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Added DC Calc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waveform.c" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +147,7 @@
       <workItem from="1777482169279" duration="3404000" />
       <workItem from="1777488648316" duration="5480000" />
       <workItem from="1777499049661" duration="16000" />
-      <workItem from="1777499079188" duration="3077000" />
+      <workItem from="1777499079188" duration="5529000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -240,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777506152507</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added DC Calc">
+      <option name="closed" value="true" />
+      <created>1777507912660</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1777507912660</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +276,7 @@
     <MESSAGE value="Fixed Misplaced Files" />
     <MESSAGE value="RMS V Calc Added" />
     <MESSAGE value="Added Amp Calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Amp Calc" />
+    <MESSAGE value="Added DC Calc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DC Calc" />
   </component>
 </project>
