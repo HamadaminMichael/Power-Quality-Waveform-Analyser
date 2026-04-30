@@ -2,7 +2,8 @@
 #define WAVEFORM_H
 #include <stddef.h>
 
-#define NOMINAL_RMS 230.0
+#define NOMINAL_RMS         230.0
+#define CLIPPING_THRESHOLD  324.9
 
 typedef struct {
     double timestamp;
@@ -21,6 +22,7 @@ typedef struct {
     double rms;
     double peak_to_peak;
     double dc_offset;
+    int    clipping_count;
 } PhaseMetrics;
 
 double phase_voltage(const WaveformSample *s, PhaseSelector p);

@@ -23,6 +23,7 @@ PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
     double sum_sq = 0.0;
     double vmin   = phase_voltage(samples, p);
     double vmax   = vmin;
+    int    clip   = 0;
 
     const WaveformSample *end = samples + n;
     for (const WaveformSample *s = samples; s < end; s++) {
@@ -31,10 +32,12 @@ PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
         sum_sq += v * v;
         if (v < vmin) vmin = v;
         if (v > vmax) vmax = v;
+        if (fabs(v) >= CLIPPING_THRESHOLD) clip++;
     }
 
-    m.dc_offset    = sum / (double)n;
-    m.rms          = sqrt(sum_sq / (double)n);
-    m.peak_to_peak = vmax - vmin;
+    m.dc_offset      = sum / (double)n;
+    m.rms            = sqrt(sum_sq / (double)n);
+    m.peak_to_peak   = vmax - vmin;
+    m.clipping_count = clip;
     return m;
 }
