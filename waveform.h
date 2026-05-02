@@ -1,10 +1,13 @@
 #ifndef WAVEFORM_H
 #define WAVEFORM_H
 #include <stddef.h>
+
+/* Constants */
 #define NOMINAL_RMS         230.0
 #define TOLERANCE           0.10
 #define CLIPPING_THRESHOLD  324.9
 
+/* Single instant mesurement */
 typedef struct {
     double timestamp;
     double phase_A_voltage;
@@ -18,6 +21,7 @@ typedef struct {
 
 typedef enum { PHASE_A, PHASE_B, PHASE_C } PhaseSelector;
 
+/* Stats computed over many samples for a phase */
 typedef struct {
     double rms;
     double peak_to_peak;

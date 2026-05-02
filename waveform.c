@@ -2,6 +2,8 @@
 #include <math.h>
 #include <stddef.h>
 
+/* Pull the right voltage field out of a sample for the requested phase.*/
+
 double phase_voltage(const WaveformSample *s, PhaseSelector p) {
     switch (p) {
         case PHASE_A: return s->phase_A_voltage;
@@ -10,6 +12,9 @@ double phase_voltage(const WaveformSample *s, PhaseSelector p) {
     }
     return 0.0;
 }
+
+/*Why Two-pass?
+*Two passes are used because one-pass formula suffers cancellation when the mean is big compared to the spread*/
 
 PhaseMetrics compute_phase_metrics(const WaveformSample *samples,
                                    size_t n,

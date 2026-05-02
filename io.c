@@ -5,8 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* 8 doubles fit comfortably in this upper bound. */
 #define MAX_LINE 512
 
+/* Count number of rows with data */
 static size_t count_data_rows(FILE *fp) {
     char line[MAX_LINE];
     size_t count = 0;
@@ -31,6 +33,7 @@ WaveformSample *load_csv(const char *filename, size_t *out_count) {
         return NULL;
     }
 
+    /* First Pass */
     size_t n = count_data_rows(fp);
     if (n == 0) {
         fprintf(stderr, "Error: file '%s' contains no data rows\n", filename);
@@ -45,6 +48,7 @@ WaveformSample *load_csv(const char *filename, size_t *out_count) {
         return NULL;
     }
 
+    /* Second Pass */
     rewind(fp);
 
     char line[MAX_LINE];
@@ -92,6 +96,7 @@ int write_results(const char *filename,
         return 1;
     }
 
+    /* Readable Report */
     fprintf(fp, "Power Quality Analysis Report\n");
     fprintf(fp, "=============================\n\n");
     fprintf(fp, "Samples analysed: %zu\n", count);
