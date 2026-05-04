@@ -28,11 +28,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Variance + Standard Deviation Added">
+    <list default="true" id="2535dc46-a1c6-4013-b01a-d018d78f7a46" name="Changes" comment="Few Explanatory Comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io.c" beforeDir="false" afterPath="$PROJECT_DIR$/io.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waveform.c" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +144,8 @@
       <workItem from="1777499079188" duration="9392000" />
       <workItem from="1777547891492" duration="3744000" />
       <workItem from="1777732300901" duration="1960000" />
-      <workItem from="1777749414514" duration="972000" />
+      <workItem from="1777749414514" duration="1006000" />
+      <workItem from="1777926076471" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="Struct + Skeleton">
       <option name="closed" value="true" />
@@ -316,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777549740448</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Few Explanatory Comments">
+      <option name="closed" value="true" />
+      <created>1777750418382</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1777750418382</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +355,7 @@
     <MESSAGE value="Complier Warnings" />
     <MESSAGE value="Result Generation" />
     <MESSAGE value="Variance + Standard Deviation Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Variance + Standard Deviation Added" />
+    <MESSAGE value="Few Explanatory Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Few Explanatory Comments" />
   </component>
 </project>
